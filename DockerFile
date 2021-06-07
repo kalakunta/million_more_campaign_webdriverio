@@ -1,0 +1,7 @@
+FROM ianwalter/puppeteer:latest
+WORKDIR /webdriverio
+ADD . /webdriverio
+
+RUN npm install
+
+CMD npm run suite --suite
